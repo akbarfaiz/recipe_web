@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+
+    <!--BOOTSTRAP-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
+
+    <!--My CSS-->
+    <link rel="stylesheet" href="style.css">
+
+    <!--FONT-->
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+
+    <style>
+        body{
+            display: grid;
+            justify-content: center;
+            align-items: center;
+            align-content: center;
+            justify-items: center;
+        }
+
+        h5{
+            color: #EFC81A;
+            font-weight: 600 !important;
+            padding-top: 50px;
+        }
+
+        p{
+            font-size: 12px;
+            color: #8692A6;
+            padding-bottom: 10px;
+        }
+
+        form{
+            width: 150%;
+            margin-bottom: 30px;
+        }
+        
+        .form-check-input[type=checkbox]{
+            margin-top: 14px;
+        }
+        
+        .form-check-input:checked{
+            background-color: #EFC81A;
+            border-color: #EFC81A;
+        }
+
+        button{
+            margin-top: 30px;
+            width: 100%;
+        }
+
+        a{
+            color: #EFC81A;
+        }
+    </style>
+</head>
+<body>
+    <h5>Recipe..</h5>
+    <h5>Welcome</h5>
+    <p>Log in into your exiting account</p>
+    <form>
+        <div class="form-group">
+          <label for="InputEmail1">Email</label>
+          <input type="email" class="form-control" id="InputEmail1" aria-describedby="emailHelp" placeholder="Enter email address">
+        </div>
+        <div class="form-group">
+          <label for="InputPassword1">Password</label>
+          <input type="password" class="form-control" id="InputPassword1" placeholder="Password">
+        </div>
+        <div class="form-check">
+          <input type="checkbox" class="form-check-input" id="Check1">
+          <label class="form-check-label" for="Check1">I agree to terms & conditions</label>
+        </div>
+        <button onclick="location.href='profilePage.html'" type="button" class="btn btn-warning" style="color: white;">Login</button>
+    </form>
+    <p>Don’t have an account? <a href="registerPage.html">Sign Up</a></p>
+</body>
+</html>

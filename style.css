@@ -1,0 +1,100 @@
+body{
+    font-family: 'Poppins';
+}
+
+.col-2, .col-4{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.col-5, .col-6, .col-7 {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+a{
+    text-decoration: none;
+    color: #2E266F;
+}
+
+h1{
+    font-size: 50px;
+    font-weight: 600 !important;
+    margin-bottom: 20px;
+}
+
+h6{
+    font-weight: 500 !important;
+}
+
+.row{
+    margin-right: 0px;
+}
+
+.navbar{
+    padding-top: 50px;
+    padding-left: 50px;
+}
+
+.header{
+    color: #2E266F;
+}
+
+.content{
+    padding-top: 60px;
+}
+
+.popular{
+    margin-top: -50px;
+}
+
+.popular-title, .new-title, .recipe-title{
+    padding-left: 100px;
+}
+
+.form-group, .form-check{
+    margin-top: 5px;
+}
+
+label, input {
+    margin-top: 10px;
+}
+
+.modal-content{
+    padding-bottom: 30px;
+}
+
+.modal-header, .modal-body{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    justify-items: center;
+}
+
+.content-profile{
+    margin: 100px 100px;
+}
+
+.pagination{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    justify-items: center;
+    margin: 100px;
+}
+
+.footer{
+    background-color: #EFC81A;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    justify-items: center;
+    padding: 150px 30px 30px;
+    color: #2E266F;
+}

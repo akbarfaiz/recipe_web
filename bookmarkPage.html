@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+
+    <!--BOOTSTRAP-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    <!--My CSS-->
+    <link rel="stylesheet" href="style.css">
+
+    <!--FONT-->
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+
+    <style>
+        .header{
+            margin-top: -30px;
+        }
+        p{
+            color: black;
+        }
+        .col{
+            display: grid;
+            justify-content: start;
+            align-items: center;
+            align-content: center;
+        }
+        .recipe-navbar{
+           margin-top: 50px;
+           border-bottom: 10px solid #EFC81A;
+        }
+        .recipe-column{
+            margin-top: 70px;
+        }
+        .recipe-status{
+            background-color: #EFC81A;
+            border-radius: 5px;
+            display: grid;
+            justify-content: center;
+            align-items: center;
+            align-content: center;
+            padding: 5px;
+        }
+        .btn-info{
+            color: white;
+        }
+        .btn-primary{
+            background-color: #F57E71;
+        }
+        .recipe-btn{
+            margin-top: 30px;
+            display: flex;
+            justify-content: center;
+            width: 120%;
+        }
+        a{
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <!--Navbar-->
+    <div class="header">
+        <div class="navbar row">
+            <div class="col-4 row">
+                <div class="col-4">
+                    <a href="index.html"><h6>Home</h6></a>
+                </div>
+                <div class="col-4">
+                    <a href="addMenuPage.html"><h6>Add Recipe</h6></a>
+                </div>
+                <div class="col-4">
+                    <a href="searchMenuPage.html"><h6>Search Menu</h6></a>
+                </div>
+            </div>
+            <div class="col-6"></div>
+            <div class="col-2 row" style="padding: 10px 10px 5px; border-left: 7px solid #EFC81A;">
+                <div class="col-4">
+                    <a href="editProfile.html">
+                        <img src="asset\dp.png" alt="">
+                    </a>
+                </div>
+                <div class="col">
+                    <p>Ayudia</p>
+                    <a data-toggle="modal" data-target="#verify"><p style="font-weight: bold;">Logout</p></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Content-->
+    <div class="content-profile">
+        <div class="row">
+            <div class="col-3 row" style="padding: 10px 10px 5px; border-left: 7px solid #EFC81A;">
+                <div class="col-4">
+                    <img src="asset\dp.png" alt="">
+                </div>
+                <div class="col">
+                    <p>Ayudia</p>
+                    <p style="font-weight: bold;">10 Recipe</p>
+                </div>
+            </div>
+            <div class="col-5"></div>
+            <div class="col-4 row">
+                <p style="font-weight: bold; display: flex; justify-content: end;">23 February 2023</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="recipe-navbar col-2" style="justify-content: start;">
+                <a href="profilePage.html"><h3 style="color: darkgrey;">Recipes</h3></a>
+            </div>
+            <div class="recipe-navbar col-2">
+                <a href="bookmarkPage.html"><h3>Bookmarked</h3></a>
+            </div>
+            <div class="recipe-navbar col-2" style="justify-content: end;">
+                <h3 style="color: darkgrey;">Liked</h3>
+            </div>
+        </div>
+        <!--Recipe Data-->
+        <div class="recipe-column card mb-3" style="max-width: 1000px;">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img src="asset\gyoza.png" class="img-fluid rounded-start" alt="...">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">Bomb Chicken</h5>
+                  <p class="card-text">Ingredients :<br>chicken, dumpling wrap, garlic, spring onion, soy sauce, black sesame seed</p>
+                  <p class="recipe-status card-text" style="color: white;">10 Likes - 12 Comment - 3 Bookmark</p>
+                  <div class="row">
+                    <div class="col-6">
+                        <button type="button" class="recipe-btn btn btn-primary">Delete From Bookmark</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+        <div class="recipe-column card mb-3" style="max-width: 1000px;">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img src="asset\gyoza.png" class="img-fluid rounded-start" alt="...">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">Bomb Chicken</h5>
+                  <p class="card-text">Ingredients :<br>chicken, dumpling wrap, garlic, spring onion, soy sauce, black sesame seed</p>
+                  <p class="recipe-status card-text" style="color: white;">10 Likes - 12 Comment - 3 Bookmark</p>
+                  <div class="row">
+                    <div class="col-6">
+                        <button type="button" class="recipe-btn btn btn-primary">Delete From Bookmark</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+    </div>
+    <!--Pagination-->
+    <div class="pagination">
+        <button type="button" class="btn btn-warning" style="color: white; margin-right: 20px;">Prev</button>
+        <h6>Show 6-10 from 10</h6>
+    </div>
+    <!--Footer-->
+    <div class="footer">
+        <h1 style="font-weight: 500 !important;">Eat, Cook, Repeat</h1>
+        <p style="color: grey;">Share your best recipe by uploading here !</p>
+        <div class="row" style="padding-top: 150px; width: 120%;">
+            <div class="col-3">
+                <p style="color: grey;">Product</p>
+            </div>
+            <div class="col-3">
+                <p style="color: grey;">Company</p>
+            </div>
+            <div class="col-3">
+                <p style="color: grey;">Learn more</p>
+            </div>
+            <div class="col-3">
+                <p style="color: grey;">Get in touch</p>
+            </div>
+        </div>
+        <p style="float: right; padding: 20px;">© Arkademy</p>
+    </div>
+
+    <!--Pop Up-->
+    <div class="modal fade" id="verify" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLongTitle">You want to logout?</h5>
+            </div>
+            <div class="modal-footer">
+              <button onclick="location.href='index.html'" type="button" class="btn btn-warning" style="color: white;" data-dismiss="modal" data-toggle="modal" data-target="#active">Yes</button>
+              <button type="button" class="btn btn-secondary" style="color: white;" data-dismiss="modal" data-toggle="modal" data-target="#active">Cancel</button>
+            </div>
+          </div>
+        </div>
+    </div>
+</body>
+</html>
